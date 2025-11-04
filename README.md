@@ -3,10 +3,11 @@
 ## Getting Started
 
 Click the [Use this template](https://github.com/wobsoriano/bun-lib-starter/generate) button to create a new repository with the contents starter.
+Click the [Or, this template](https://github.com/mingderwang/theme-proivder-template/generate) button to create a new repository with typedoc and react for a provider.
 
 OR
 
-Run `bun create wobsoriano/bun-lib-starter ./my-lib`.
+Run `bun create mingderwang/theme-proivder-template ./my-provider`.
 
 ## Setup
 

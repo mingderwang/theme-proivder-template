@@ -1,9 +1,9 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import React from "react";
+import { useState } from "react";
 import { describe, it, expect } from "vitest";
 
 function Counter() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
   return (
     <div>
       <p data-testid="count">{count}</p>

@@ -25,8 +25,7 @@ describe('ThemeProvider', () => {
     expect(screen.getByTestId('theme').textContent).toBe('light');
 
     fireEvent.click(screen.getByRole('button', { name: /toggle/i }));
- const el = await screen.findByTestId("theme");
-expect(el.textContent).toBe("dark");
+    expect(screen.getByTestId('theme').textContent).toBe('dark');
 
     fireEvent.click(screen.getByRole('button', { name: /toggle/i }));
     expect(screen.getByTestId('theme').textContent).toBe('light');
@@ -41,5 +40,5 @@ expect(el.textContent).toBe("dark");
 
     expect(screen.getByTestId('theme').textContent).toBe('dark');
   }
-);
+  );
 })
