@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "jsx": "react-jsx",
     "target": "es2020",
     "module": "esnext",
     "strict": true,

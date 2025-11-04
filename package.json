@@ -1,17 +1,22 @@
 {
-  "name": "pkg-name",
-  "version": "0.0.0",
+  "name": "@yourorg/theme-proivder-template",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "",
   "scripts": {
     "build": "bun run build.mjs",
-    "prepublishOnly": "bun run build"
+    "vitest": "vitest",
+    "prepublishOnly": "bun run build",
+    "docs": "typedoc"
   },
   "files": [
     "dist"
   ],
   "keywords": [
+    "testing-library",
+    "typedoc",
+    "react",
     "bun"
   ],
   "license": "MIT",
@@ -23,8 +28,33 @@
   "bugs": "https://github.com/wobsoriano/pkg-name/issues",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "devDependencies": {
-    "bun-plugin-dts": "^0.2.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@happy-dom/global-registrator": "^20.0.10",
     "@types/bun": "^1.0.0",
-    "typescript": "^5.2.2"
+    "bun-plugin-dts": "^0.2.1",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-markdown": "^4.9.0",
+    "typescript": "^5.2.2",
+    "vitest": "^4.0.6"
+  },
+  "dependencies": {
+    "@types/jsdom": "^27.0.0",
+    "@types/react": "^19.2.2",
+    "jsdom": "^27.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "typedocOptions": {
+    "entryPointStrategy": "expand",
+    "entryPoints": ["src"],
+    "out": "docs/api",
+    "theme": "default",
+    "includeVersion": true,
+    "hideGenerator": true
   }
 }
