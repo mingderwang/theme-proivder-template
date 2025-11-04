@@ -48,6 +48,8 @@
     "react": "latest"
   },
   "peerDependencies": {
+    "react-dom": "latest",
+    "react": "latest",
     "typescript": "^5.0.0"
   },
   "typedocOptions": {
