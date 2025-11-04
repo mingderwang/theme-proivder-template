@@ -1,6 +1,6 @@
 {
   "name": "@yourorg/theme-proivder-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "",
@@ -44,7 +44,8 @@
     "@types/jsdom": "^27.0.0",
     "@types/react": "^19.2.2",
     "jsdom": "^27.1.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "latest",
+    "react": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
